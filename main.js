@@ -44,7 +44,6 @@ function sortear() {
     while (resultado % 1 != 0) { // loop enquanto o resultado não é inteiro
         num1 = Math.floor(Math.random() * 200) - 100;
         num2 = Math.floor(Math.random() * 200) - 100;
-        op = operacoes[Math.floor(Math.random() * 4)];
         resultado = calcular(num1, num2, op);
     }
 
