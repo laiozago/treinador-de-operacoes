@@ -7,7 +7,7 @@ const somErrado = document.getElementById('somRespostaErrada');
 let acertos = 0;
 
  //*função para calcular o resultado da operação
-    function calcular(num1, num2, op) {
+    const calcular = (num1, num2, op) => {
     let resultado;
     switch (op) {
         case '+':
@@ -29,7 +29,7 @@ let acertos = 0;
 }
 
 //*função para sortear dois numeros de -100 a +100 para o quiz e a operação
-function sortear() {
+const sortear = () => {
     const numero1 = document.getElementById('numero1');
     const numero2 = document.getElementById('numero2');
     const operacao = document.getElementById('operacao');
@@ -48,7 +48,7 @@ function sortear() {
     }
 
     //função para criar outros 3 numeros inteiros aleatorios para as opções
-    function criarOpcoes() {
+    const criarOpcoes = () => {
         let opcoes = [];
         for (let i = 0; i < 3; i++) {
             let opcao = Math.floor(Math.random() * 20000) - 10000;
@@ -58,7 +58,7 @@ function sortear() {
     }
     
     //função para colocar na tela as opçẽos e o resultado numa ordem aleatoria
-    function colocarOpcoes() {
+    const colocarOpcoes = () => {
         const opcoes = document.querySelectorAll('input');
         const opcoesLabel = document.querySelectorAll('label');
         let opcoesCriadas = criarOpcoes();
@@ -78,7 +78,7 @@ function sortear() {
 }
 
 //*função para verificar se a opção escolhida está correta
-function verificar() {
+const verificar = () => {
     const numero1 = document.getElementById('numero1');
     const numero2 = document.getElementById('numero2');
     const operacao = document.getElementById('operacao');
