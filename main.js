@@ -53,7 +53,7 @@ const sortear = () => {
         for (let i = 0; i < 3; i++) {
             let opcao = Math.floor(Math.random() * resultado * 1.2);
             while (opcao == resultado || opcoes.includes(opcao)) {
-                opcao = Math.floor(Math.random() * resultado*1.2);
+                opcao = Math.floor(Math.random() * resultado*3);
             }
                 opcoes.push(opcao);
         }
