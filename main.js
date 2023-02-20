@@ -51,7 +51,7 @@ const sortear = () => {
     const criarOpcoes = () => {
         let opcoes = [];
         for (let i = 0; i < 3; i++) {
-            let opcao = Math.floor(Math.random() * resultado - resultado/2);
+            let opcao = Math.floor(Math.random() * resultado * 1.2);
             while (opcao == resultado || opcoes.includes(opcao)) {
                 opcao = Math.floor(Math.random() * resultado*1.2);
             }
